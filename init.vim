@@ -12,6 +12,8 @@ Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
 Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -49,7 +51,9 @@ let g:airline_theme='onedark'	"el tema de airline
 "configuracion de nerdtree
 "mapeando el abrir y cerrar de nerdtree con nerdtreetoggle vemos los archivos en el arbol y podemos cerrarlo a la vez, map es la C mayuscula representa el
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
+
 map <C-n> :NERDTreeToggle<CR>
+map <C-p> :Files<CR>
 
 
 
