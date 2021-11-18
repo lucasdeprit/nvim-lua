@@ -81,7 +81,6 @@ let mapleader=" "
 " keymaps with set hiddenleader
 nnoremap <leader>w :w<CR>
 nmap <C-n> :NERDTreeToggle<CR>
-noremap <leader>hk :10sp ~/.local/share/nvim/cheatsheet.txt<CR>
 
 map <C-p> :Files<CR>
 
