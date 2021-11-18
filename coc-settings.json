@@ -1,0 +1,9 @@
+{
+      "prettier.tslintIntegration": true,
+      "prettier.eslintIntegration": false,
+      "coc.preferences.formatOnSaveFiletypes": [
+            "css", "markdown","javascript", "javascriptreact","typescript", "typescriptreact", "typescript.tsx"
+      ]
+
+}
+ 
