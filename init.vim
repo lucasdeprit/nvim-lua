@@ -58,7 +58,7 @@ Plug 'alvan/vim-closetag'
 
 ""autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions=['coc-prettier', 'coc-tsserver', 'coc-emmet', 'coc-tslint', 'coc-prettier', 'coc-html']
+let g:coc_global_extensions=['coc-prettier', 'coc-tsserver', 'coc-emmet', 'coc-tslint', 'coc-prettier', 'coc-html', 'coc-explorer']
 
 "fzf file explorer
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -80,8 +80,7 @@ inoremap ii <ESC>
 let mapleader=" "
 " keymaps with set hiddenleader
 nnoremap <leader>w :w<CR>
-nmap <C-n> :NERDTreeToggle<CR>
-
+nnoremap <leader>q :q<CR>
 map <C-p> :Files<CR>
 
 "COC ON TAB
@@ -111,8 +110,8 @@ call plug#end() 			"cerramos el llamado de los plugins
 "configuracion de nerdtree
 "mapeando el abrir y cerrar de nerdtree con nerdtreetoggle vemos los archivos en el arbol y podemos cerrarlo a la vez, map es la C mayuscula representa el
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
-
-map <C-n> :NERDTreeToggle<CR>
+nmap <leader>e :CocCommand explorer<CR>
+"map <C-n> :NERDTreeToggle<CR>
 map <C-p> :Files<CR>
 
 "configuracion del tema
