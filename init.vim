@@ -28,9 +28,9 @@ set clipboard=unnamed			"para poder utilizar el portapapeles del sistema operati
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "**UBUNTU**
-"call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 "**WINDOWS
-call plug#begin('~/AppData/Local/nvim/plugged') 
+"call plug#begin('~/AppData/Local/nvim/plugged') 
 
 "related with themes
 Plug 'joshdick/onedark.vim' 		"tema
@@ -101,9 +101,9 @@ nnoremap <c-i> :bn<CR>
 
 "F2 to open init.vim
 "**UBUNTU**
-"nnoremap <F2> :15sp ~/.config/nvim/init.vim<CR>
+nnoremap <F2> :15sp ~/.config/nvim/init.vim<CR>
 "**WINDOWS**
-nnoremap <F2> :15sp ~/AppData/Local/nvim/init.vim 
+"nnoremap <F2> :15sp ~/AppData/Local/nvim/init.vim 
 call plug#end() 			"cerramos el llamado de los plugins
 
 
