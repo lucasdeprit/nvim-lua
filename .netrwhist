@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/luak/.local/share/nvim/site/pack/packer/start/packer.nvim/lua'
+let g:netrw_dirhist_3='/home/luak/.local/share/nvim/site/pack/packer/start/packer.nvim'
+let g:netrw_dirhist_2='/home/luak/.config/nvim'
+let g:netrw_dirhist_1='/home/luak/.config/nvim/lua'
