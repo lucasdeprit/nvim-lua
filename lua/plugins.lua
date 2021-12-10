@@ -6,7 +6,6 @@ end
 
 return require('packer').startup(function(use)
   -- Put this at the end after all plugins
-  use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -15,6 +14,8 @@ return require('packer').startup(function(use)
     config = function() require'nvim-tree'.setup {} end
    }
    use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+   use 'neovim/nvim-lspconfig'
+   use 'hrsh7th/nvim-compe'
  if packer_bootstrap then
     require('packer').sync()
   end
