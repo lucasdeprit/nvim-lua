@@ -14,7 +14,12 @@ return require('packer').startup(function(use)
     config = function() require'nvim-tree'.setup {} end
    }
    use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+   use {'neoclide/coc.nvim', branch = 'release'}
    use 'neovim/nvim-lspconfig'
+   use 'hrsh7th/vim-vsnip'
+   use 'sheerun/vim-polyglot'
+   use "jose-elias-alvarez/null-ls.nvim"
+   use "jose-elias-alvarez/nvim-lsp-ts-utils"
    use 'hrsh7th/nvim-compe'
  if packer_bootstrap then
     require('packer').sync()
