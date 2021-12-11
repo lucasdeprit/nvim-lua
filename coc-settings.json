@@ -1,0 +1,29 @@
+{
+      "prettier.tslintIntegration": true,
+      "prettier.eslintIntegration": false,
+      "coc.preferences.formatOnSaveFiletypes": [
+            "css", "markdown","javascript", "javascriptreact","typescript", "typescriptreact", "typescript.tsx"
+      ],
+ //explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
+    "ov": "open:vsplit",
+    "oh": "open:split",
+    "dd": "delete",
+    "rf": "rename",
+    "l": false,
+    "h": false,
+    "i": false,
+    "r": false,
+    "a": false,
+    "<tab>": "actionMenu",
+    "af": "addFile",
+    "ad": "addDirectory",
+    "pf": "pasteFile",
+    "cf": "copyFile",
+    "q": "quit"
+  }
+}
