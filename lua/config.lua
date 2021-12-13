@@ -19,9 +19,29 @@ local options = {
   
   --Always leave space down
   scrolloff= 8,
+	
+  --tab configurations
+  expandtab = true,
+  shiftwidth = 2,
+  softtabstop = 2,
+  
+  --Fold expresions
+  foldmethod = "expr",
+  foldexpr = "nvim_treesitter#foldexpr()",
+
 
 }
+
 local globals = {}
+
+local bo = {
+  
+  --indentation
+  autoindent = true,
+  smartindent = true,
+
+}
+
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
@@ -30,15 +50,11 @@ for k, v in pairs(globals) do
   vim.g[k] = v
 end
 
-vim.cmd [[
-set autoindent
-set expandtab
-set shiftwidth=2
-set smartindent
-set softtabstop=2
-set tabstop=2
-let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-emmet', 'coc-tslint', 'coc-prettier', 'coc-html', 'coc-explorer' ]
-]]
+for k, v in pairs(bo) do
+  vim.bo[k] = v
+end
+
+
 local t = function(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
@@ -66,9 +82,7 @@ _G.s_tab_complete = function()
     end
 end
 
-vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-        
+       
 --gruvbox theme
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])

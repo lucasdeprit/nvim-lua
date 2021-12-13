@@ -18,10 +18,28 @@ return require('packer').startup(function(use)
    use 'neovim/nvim-lspconfig'
    use 'hrsh7th/vim-vsnip'
    use 'sheerun/vim-polyglot'
-   use "jose-elias-alvarez/null-ls.nvim"
-   use "jose-elias-alvarez/nvim-lsp-ts-utils"
+   use 'jose-elias-alvarez/null-ls.nvim'
+   use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+   use 'williamboman/nvim-lsp-installer'
+   use 'MunifTanjim/prettier.nvim'
    use 'hrsh7th/nvim-compe'
+	 use {
+    'goolord/alpha-nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.opts)
+				local startify = require("alpha.themes.startify")
+				startify.section.bottom_buttons.val = {
+				startify.button("v", "neovim config", ":e ~/.config/nvim/init.lua<cr>"),
+				startify.button("q", "quit nvim", ":qa<cr>"),
+				}
+    end
+}
+    -- IDE
+    use 'nvim-treesitter/nvim-treesitter'
  if packer_bootstrap then
     require('packer').sync()
   end
 end)
+
+
