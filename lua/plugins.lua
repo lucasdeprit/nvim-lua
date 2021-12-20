@@ -17,6 +17,10 @@ return require('packer').startup(function(use)
    use 'MunifTanjim/prettier.nvim'
    use 'hrsh7th/nvim-compe'
    use 'nvim-lua/plenary.nvim'
+   use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 	 use {
     'goolord/alpha-nvim',
    use {

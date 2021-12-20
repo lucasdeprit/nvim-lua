@@ -47,3 +47,6 @@ keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 -- Startup page on F2
 keymap('n', '<F2>', ":Alpha<cr>", dfopt )
  
+--telescope keymaps
+keymap('n', '<Leader>ff', ":Telescope find_files<cr>", dfopt)
+keymap('n', '<Leader>fd', ":Telescope live_grep<cr>", dfopt)

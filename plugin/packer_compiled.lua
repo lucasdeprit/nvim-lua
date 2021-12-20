@@ -75,6 +75,11 @@ _G.packer_plugins = {
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/luak/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -125,10 +130,20 @@ _G.packer_plugins = {
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/luak/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["prettier.nvim"] = {
     loaded = true,
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/luak/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-polyglot"] = {
     loaded = true,
