@@ -29,6 +29,10 @@ local options = {
   foldmethod = "expr",
   foldexpr = "nvim_treesitter#foldexpr()",
 
+  foldlevel = 9,
+  
+  --ignore case
+  ignorecase = true,
 
 }
 

@@ -6,13 +6,6 @@ end
 
 return require('packer').startup(function(use)
   -- Put this at the end after all plugins
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
-    config = function() require'nvim-tree'.setup {} end
-   }
    use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
    use {'neoclide/coc.nvim', branch = 'release'}
    use 'neovim/nvim-lspconfig'
@@ -23,8 +16,14 @@ return require('packer').startup(function(use)
    use 'williamboman/nvim-lsp-installer'
    use 'MunifTanjim/prettier.nvim'
    use 'hrsh7th/nvim-compe'
+   use 'nvim-lua/plenary.nvim'
 	 use {
     'goolord/alpha-nvim',
+   use {
+    --barbar.nvim top bar
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+   },
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
         require'alpha'.setup(require'alpha.themes.startify'.opts)

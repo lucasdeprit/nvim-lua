@@ -115,12 +115,6 @@ _G.packer_plugins = {
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
-    loaded = true,
-    path = "/home/luak/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -149,10 +143,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\2•\2\0\0\a\0\15\1\0296\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0009\3\b\0'\4\t\0'\5\n\0'\6\v\0B\3\4\2>\3\1\0029\3\b\0'\4\f\0'\5\r\0'\6\14\0B\3\4\0?\3\0\0=\2\a\1K\0\1\0\f:qa<cr>\14quit nvim\6q#:e ~/.config/nvim/init.lua<cr>\18neovim config\6v\vbutton\bval\19bottom_buttons\fsection\topts\26alpha.themes.startify\nsetup\nalpha\frequire\5€€À™\4\0", "config", "alpha-nvim")
