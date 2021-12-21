@@ -32,12 +32,7 @@ return require('packer').startup(function(use)
    },
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.opts)
-				local startify = require("alpha.themes.startify")
-				startify.section.bottom_buttons.val = {
-				startify.button("v", "neovim config", ":e ~/.config/nvim/init.lua<cr>"),
-				startify.button("q", "quit nvim", ":qa<cr>"),
-				}
+        require'alpha'.setup(require'alpha.themes.luak'.opts)
     end
 }
     -- IDE
