@@ -58,7 +58,6 @@ for k, v in pairs(bo) do
   vim.bo[k] = v
 end
 
-
 local t = function(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
 end

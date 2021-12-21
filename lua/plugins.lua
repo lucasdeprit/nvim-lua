@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
    use 'MunifTanjim/prettier.nvim'
    use 'hrsh7th/nvim-compe'
    use 'nvim-lua/plenary.nvim'
+   use 'wakatime/vim-wakatime'
    use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
