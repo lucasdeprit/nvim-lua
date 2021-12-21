@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["alpha-nvim"] = {
-    config = { "\27LJ\2\2•\2\0\0\a\0\15\1\0296\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0009\3\b\0'\4\t\0'\5\n\0'\6\v\0B\3\4\2>\3\1\0029\3\b\0'\4\f\0'\5\r\0'\6\14\0B\3\4\0?\3\0\0=\2\a\1K\0\1\0\f:qa<cr>\14quit nvim\6q#:e ~/.config/nvim/init.lua<cr>\18neovim config\6v\vbutton\bval\19bottom_buttons\fsection\topts\26alpha.themes.startify\nsetup\nalpha\frequire\5€€À™\4\0" },
+    config = { "\27LJ\2\2Z\0\0\3\0\5\0\n6\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\1K\0\1\0\topts\22alpha.themes.luak\nsetup\nalpha\frequire\0" },
     loaded = true,
     path = "/home/luak/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
@@ -170,7 +170,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\2•\2\0\0\a\0\15\1\0296\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\1\5\0009\1\6\0014\2\3\0009\3\b\0'\4\t\0'\5\n\0'\6\v\0B\3\4\2>\3\1\0029\3\b\0'\4\f\0'\5\r\0'\6\14\0B\3\4\0?\3\0\0=\2\a\1K\0\1\0\f:qa<cr>\14quit nvim\6q#:e ~/.config/nvim/init.lua<cr>\18neovim config\6v\vbutton\bval\19bottom_buttons\fsection\topts\26alpha.themes.startify\nsetup\nalpha\frequire\5€€À™\4\0", "config", "alpha-nvim")
+try_loadstring("\27LJ\2\2Z\0\0\3\0\5\0\n6\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\1K\0\1\0\topts\22alpha.themes.luak\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
 if should_profile then save_profiles() end
 
