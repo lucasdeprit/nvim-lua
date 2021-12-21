@@ -50,3 +50,7 @@ keymap('n', '<F2>', ":Alpha<cr>", dfopt )
 --telescope keymaps
 keymap('n', '<Leader>ff', ":Telescope find_files<cr>", dfopt)
 keymap('n', '<Leader>fd', ":Telescope live_grep<cr>", dfopt)
+
+--ranger 
+
+keymap('n', '<Leader>r', ":RnvimrToggle<cr>", dfopt)

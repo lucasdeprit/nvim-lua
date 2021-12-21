@@ -89,3 +89,9 @@ end
 --gruvbox theme
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
+
+--ranger
+
+vim.g["rnvimr_enable_ex"] = 1
+vim.g["NERDTreeHijackNetrw"] = 0
+vim.g["loaded_netrwPlugin"] = 1

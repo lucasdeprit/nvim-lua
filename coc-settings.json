@@ -1,6 +1,6 @@
 {
       "coc.preferences.formatOnSaveFiletypes": [
-        "css"
+        "css","javascript","javascriptreact"
       ],
  //explorer
   "explorer.width": 30,
