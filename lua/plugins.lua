@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
    use 'hrsh7th/nvim-compe'
    use 'nvim-lua/plenary.nvim'
    use 'wakatime/vim-wakatime'
+   use 'akinsho/toggleterm.nvim'
    use 'kevinhwang91/rnvimr'
    use {
     'nvim-telescope/telescope.nvim',
